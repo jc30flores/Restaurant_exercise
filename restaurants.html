@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurants</title>
+</head>
+<body>
+    <div>
+    <h1>Restaurants</h1>
+    <p><a href="{{url_for('restaurantsNew')}}">Create New Restaurant</a></p>
+    
+    {% for i in items %}
+
+        <p> {{i.name}} -- ID: {{i.id}} </br>
+            <a href="#">Edit</a></br>
+            <a href="#">Delete</a>
+        </p>
+        </br>
+        
+    </div>
+    {% endfor %}
+</body>
+</html>
