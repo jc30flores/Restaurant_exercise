@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mi primera web</title>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+
+        <table style="width: 500px;">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Gafas de ESNTL</td>
+                    <td>Gratis</td>
+                </tr>
+                <tr>
+                    <td>Gafas de sol</td>
+                    <td>$20.50</td>
+                </tr>
+                <tr>
+                    <td>Gafas de sol super caras</td>
+                    <td>$70.50</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td></td>
+                <td>Total: $50.50</td>
+            </tfoot>
+        </table>
+        <!--ul es lista no ordenada-->
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+        </ul>
+
+        <!--ol es lista ordenada-->
+        <ol>
+            <li value="50">Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+            <li>
+                <ol>
+                    <li style="list-style-type: lower-roman;">sub elemento 1</li>
+                    <li style="list-style-type: lower-roman;">sub elemento 1</li>
+                    <li style="list-style-type: lower-roman;">sub elemento 1</li>
+                </ol>
+            </li>
+        </ol>
+
+
+
+
+        <form action="/formulario" method="POST">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre"/>
+            <br>
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="nombre" placeholder="Apellido"/>
+            <br>
+            <label for="comentario">Comentario</label>
+            <br>
+            <textarea rows="10" cols="50" id="comentario" placeholder="ingrese un comentario..." name="comentario"></textarea>
+            <br>
+            <button type="button">Tipo Boton</button>
+            <button type="reset">Tipo Reset</button>
+            <button type="submit">Tipo Submit</button>
+        </form>
+        <h1>Mi primer heading</h1>
+        <h2>Mi segundo heading</h2>
+        <h3>Mi tercer heading</h3>
+        <h4>Mi cuarto heading</h4>
+        <h5>Mi quinto heading</h5>
+        <h6>Mi sexto heading</h6>
+        <p>Chanchito Feliz esta muy Feliz.</p>
+        <p>Chanchito Triste esta Triste</p>
+        <hr>
+        <h2>Chanchito Felipe</h2>
+        <p>Este text es <span style="color:blueviolet">mucho mas largo</span> 
+            y es para mostrar <br><br>
+            la etiqueta de span!
+        </p>
+        <!-- este texto es un comentario y no va a
+             aparecer en el explorador-->
+
+        <a target="_blank" href="file:///home/tj-73/Documents/testing_vscode/blog.html#Title">Ir a mi blog</a>
+        
+        <img src="img/wallpaper.png" height="400"/>
+        
+    </body>
+</html>
